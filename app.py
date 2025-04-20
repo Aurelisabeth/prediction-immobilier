@@ -71,3 +71,7 @@ if st.button("**Prédire le prix**"):
     prediction = model.predict(input_data)
     st.header("💬 Résultat")
     st.success(f"🏠 La valeur médiane du bien est estimé à : **${prediction[0]*100_000:,.0f}**")
+
+# Footer
+st.markdown("---")
+st.markdown("<p style='text-align:center;'>Réalisé par Aurélie PERNELLE | Avril 2025</p>", unsafe_allow_html=True)
